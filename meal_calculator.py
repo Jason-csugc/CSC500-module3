@@ -1,6 +1,9 @@
-
-
-meal_price = float(input('Input meal price in dollars and cents: (i.e. 13.68)'))
+while True:
+    try:
+        meal_price = float(input('Input meal price in dollars and cents: (i.e. 13.68) '))
+        break
+    except ValueError:
+        print('Oops! That was not a valid value.  Try again...')
 
 tip = meal_price * 0.18
 tax = meal_price * 0.07
